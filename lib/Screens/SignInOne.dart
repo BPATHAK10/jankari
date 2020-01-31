@@ -70,10 +70,6 @@ class SignInOne extends StatelessWidget {
                   padding: EdgeInsets.only(top: 20),
                   child: MaterialButton(
                     onPressed: (){
-//                      Navigator.push(context,
-//                        MaterialPageRoute(builder:(context)=>HomeScreen())
-//                      );
-
                       Navigator.of(context).pushNamed("/MainScreen");
                     },//since this is only a UI app
                     child: Text('SIGN IN',
