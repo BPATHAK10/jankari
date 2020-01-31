@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'Screens/SignInOne.dart';
 
 class Home extends StatelessWidget {
@@ -7,7 +6,6 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SignInOne(),
-      //body: SignInTwo(),
     );
   }
 }

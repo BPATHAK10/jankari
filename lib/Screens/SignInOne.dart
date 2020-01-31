@@ -5,20 +5,23 @@ class SignInOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: <Widget>[
-        Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage('Assets/images/logo.PNG'),
-              fit: BoxFit.fitWidth,
-              alignment: Alignment.topCenter
-            )
-          ),
+        Padding(
+          padding: const EdgeInsets.all(2),
+          child: Container(
+            decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage('Assets/images/logo.PNG'),
+                    fit: BoxFit.fitWidth,
+                    alignment: Alignment.topCenter
+                )
+            ),
+          )
         ),
         Container(
           width: MediaQuery.of(context).size.width,
-          margin: EdgeInsets.only(top: 350),
+          margin: EdgeInsets.only(top: 340),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(9),
+            borderRadius: BorderRadius.circular(30),
             color: Colors.teal[200],
           ),
           child: Padding(
@@ -90,45 +93,47 @@ class SignInOne extends StatelessWidget {
                     ),
                   ),
                 ),
-                Padding(
-                  padding: EdgeInsets.only(top: 20),
-                  child: Center(
-                    child: Text('Forgot your password?',
-                    style: TextStyle(
-                      fontFamily: 'SignInPage',
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold
-                    ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 30),
-                  child: Center(
-                    child: RichText(
-                      text: TextSpan(
-                        children: [
-                          TextSpan(
-                            text: "Don't have an account?",
-                            style: TextStyle(
-                              fontFamily: 'SignInPage',
-                              color: Colors.black,
-                              fontSize: 15,
-                            )
-                          ),
-                          TextSpan(
-                            text: "sign up",
-                            style: TextStyle(
-                              fontFamily: 'SignInPage',
-                              color: Color(0xffff2d55),
-                              fontSize: 15,
-                            )
-                          )
-                        ]
-                      ),
-                    ),
-                  ),
-                )
+
+
+//                Padding(
+//                  padding: EdgeInsets.only(top: 20),
+//                  child: Center(
+//                    child: Text('Forgot your password?',
+//                    style: TextStyle(
+//                      fontFamily: 'SignInPage',
+//                      fontSize: 15,
+//                      fontWeight: FontWeight.bold
+//                    ),
+//                    ),
+//                  ),
+//                ),
+//                Padding(
+//                  padding: EdgeInsets.only(top: 30),
+//                  child: Center(
+//                    child: RichText(
+//                      text: TextSpan(
+//                        children: [
+//                          TextSpan(
+//                            text: "Don't have an account?",
+//                            style: TextStyle(
+//                              fontFamily: 'SignInPage',
+//                              color: Colors.black,
+//                              fontSize: 15,
+//                            )
+//                          ),
+//                          TextSpan(
+//                            text: "sign up",
+//                            style: TextStyle(
+//                              fontFamily: 'SignInPage',
+//                              color: Color(0xffff2d55),
+//                              fontSize: 15,
+//                            )
+//                          )
+//                        ]
+//                      ),
+//                    ),
+//                  ),
+//                )
               ],
             ),
           ),
