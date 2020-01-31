@@ -107,33 +107,38 @@ class SignInOne extends StatelessWidget {
 //                    ),
 //                  ),
 //                ),
-//                Padding(
-//                  padding: EdgeInsets.only(top: 30),
-//                  child: Center(
-//                    child: RichText(
-//                      text: TextSpan(
-//                        children: [
-//                          TextSpan(
-//                            text: "Don't have an account?",
-//                            style: TextStyle(
-//                              fontFamily: 'SignInPage',
-//                              color: Colors.black,
-//                              fontSize: 15,
-//                            )
-//                          ),
-//                          TextSpan(
-//                            text: "sign up",
-//                            style: TextStyle(
-//                              fontFamily: 'SignInPage',
-//                              color: Color(0xffff2d55),
-//                              fontSize: 15,
-//                            )
-//                          )
-//                        ]
-//                      ),
-//                    ),
-//                  ),
-//                )
+                Padding(
+                  padding: EdgeInsets.only(top: 30),
+                  child: MaterialButton(
+                    onPressed:() {
+                      Navigator.of(context).pushNamed("/Registration");
+                    },
+                    child: Center(
+                      child: RichText(
+                        text: TextSpan(
+                          children: [
+                            TextSpan(
+                              text: "Don't have an account?",
+                              style: TextStyle(
+                                fontFamily: 'SignInPage',
+                                color: Colors.black,
+                                fontSize: 15,
+                              )
+                            ),
+                            TextSpan(
+                              text: "sign up",
+                              style: TextStyle(
+                                fontFamily: 'SignInPage',
+                                color: Color(0xffff2d55),
+                                fontSize: 15,
+                              )
+                            )
+                          ]
+                        ),
+                      ),
+                    ),
+                  ),
+                )
               ],
             ),
           ),
