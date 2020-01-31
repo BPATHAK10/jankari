@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'Home.dart';
-import 'Screens/biraj.dart';
 import 'Screens/SignInOne.dart';
 import 'package:jankari/Screens/Registration.dart';
 import 'Screens/HomeScreen.dart';

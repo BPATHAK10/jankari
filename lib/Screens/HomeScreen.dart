@@ -108,24 +108,53 @@ class _DropdownMenuState extends State<DropdownMenu> {
           ),
           Padding(
             padding: EdgeInsets.only(top: 20),
-            child: MaterialButton(
-              onPressed: (){
-                Navigator.of(context).pushNamed("/SignInPage");
-              },//since this is only a UI app
-              child: Text('SIGN IN',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontFamily: 'SignInPage',
-                  fontWeight: FontWeight.bold,
+            child: Align(
+              alignment: Alignment.bottomLeft,
+              child: MaterialButton(
+                onPressed: (){
+                  Navigator.of(context).pushNamed("/SignInPage");
+                },
+                child: Text('SIGN IN',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: 'SignInPage',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                color: Color(0xffff2d55),
+                elevation: 0,
+                minWidth: 100,
+                height: 50,
+                textColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
                 ),
               ),
-              color: Color(0xffff2d55),
-              elevation: 0,
-              minWidth: 400,
-              height: 50,
-              textColor: Colors.white,
-              shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10)
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 20),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: MaterialButton(
+                onPressed: (){
+                  Navigator.of(context).pushNamed("/Registration");
+                },
+                child: Text('Register',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontFamily: 'SignInPage',
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                color: Colors.blueAccent,
+                elevation: 0,
+                minWidth: 100,
+                height: 50,
+                textColor: Colors.white,
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10)
+                ),
               ),
             ),
           ),

@@ -36,17 +36,17 @@ class Registration extends StatelessWidget {
 
                     )
                 ),
-//                new Container(
-//                    padding: const EdgeInsets.only(top: 10.0),
-//                    child: new TextFormField(
-//                        keyboardType: TextInputType.emailAddress, // Use email input type for emails.
-//                        decoration: new InputDecoration(
-//                            hintText: 'you@example.com',
-//                            labelText: 'E-mail Address',
-//                            icon: new Icon(Icons.email))
-//
-//                    )
-//                ),
+                new Container(
+                    padding: const EdgeInsets.only(top: 10.0),
+                    child: new TextFormField(
+                        keyboardType: TextInputType.emailAddress, // Use email input type for emails.
+                        decoration: new InputDecoration(
+                            hintText: 'you@example.com',
+                            labelText: 'E-mail Address',
+                            icon: new Icon(Icons.email))
+
+                    )
+                ),
                 new Container(
                   padding: const EdgeInsets.only(top:10.0),
                   child:  new TextFormField(
@@ -59,18 +59,18 @@ class Registration extends StatelessWidget {
                       )
                   ),
                 ),
-//                new Container(
-//                  padding: const EdgeInsets.only(top:10.0),
-//                  child:  new TextFormField(
-//                      obscureText: true, // Use secure text for passwords.
-//                      decoration: new InputDecoration(
-//                          hintText: 'Confirm Password',
-//                          labelText: 'Enter your confirm password',
-//                          icon: new Icon(Icons.lock)
-//
-//                      )
-//                  ),
-//                ),
+                new Container(
+                  padding: const EdgeInsets.only(top:10.0),
+                  child:  new TextFormField(
+                      obscureText: true, // Use secure text for passwords.
+                      decoration: new InputDecoration(
+                          hintText: 'Confirm Password',
+                          labelText: 'Enter your confirm password',
+                          icon: new Icon(Icons.lock)
+
+                      )
+                  ),
+                ),
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
